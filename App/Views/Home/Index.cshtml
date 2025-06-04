@@ -1,5 +1,5 @@
-﻿
-@model Employee
+﻿@model List<Employee>
+
 <div class="text-center">
     <h1 class="display-4">Employee List</h1>
    
@@ -17,7 +17,11 @@
         @foreach (var obj in Model)
         {
             <tr>
-                <td></td>
+                <td>@obj.EmpId</td>
+                <td>@obj.Name</td>
+                <td>@obj.IdNum</td>
+                <td>@obj.Age</td>
+                <td>@obj.DepId</td>
             </tr>
         }
         </tbody>
